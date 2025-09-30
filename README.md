@@ -7,7 +7,8 @@
 
 2. Скачайте репозиторий ansible: `git clone https://github.com/ansible/ansible.git` по любому удобному вам пути
 
-скрин  
+<img width="811" height="167" alt="image" src="https://github.com/user-attachments/assets/741a6027-7267-4434-bfea-a9cf14c6f5c9" />
+
 
 3. Зайдите в директорию ansible: `cd ansible`
 4. Создайте виртуальное окружение: `python3 -m venv venv`
