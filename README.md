@@ -221,7 +221,8 @@ if __name__ == '__main__':
 
 4. Проверьте module на исполняемость локально.
 
-скрин  
+<img width="547" height="132" alt="image" src="https://github.com/user-attachments/assets/f02a8a85-c234-4221-ad0f-83d63025425e" />  
+
 
 
 5. Напишите single task playbook и используйте module в нём.
