@@ -231,7 +231,9 @@ if __name__ == '__main__':
 
 6. Проверьте через playbook на идемпотентность.
 
-СКРИН
+<img width="1151" height="652" alt="image" src="https://github.com/user-attachments/assets/4b4a0a87-acca-4d7c-8b3f-0730884d8d2d" />  
+<img width="1155" height="662" alt="image" src="https://github.com/user-attachments/assets/1343aab2-f32e-4caa-be0a-d15f8406e04b" />  
+
 
 7. Выйдите из виртуального окружения.
 
@@ -321,53 +323,16 @@ drwxr-x--- 10 vagrant vagrant 4096 Sep 26 12:24 ../
 
 15. Установите collection из локального архива: `ansible-galaxy collection install <archivename>.tar.gz`
 
+<img width="689" height="296" alt="image" src="https://github.com/user-attachments/assets/615af413-09fa-4466-b94c-d55bf62bb9bb" />  
 
-СКРИН  
-```shell
-nikita@DESKTOP-G2TVP0M:~/example_collection$ ansible-galaxy collection install my_own_namespace-my_own_collection-1.0.0.tar.gz
-[WARNING]: You are running the development version of Ansible. You should only run Ansible from "devel" if you are modifying the Ansible engine, or trying out features under development. This is a rapidly
-changing source of code and can become unstable at any point.
-Starting galaxy collection install process
-Process install dependency map
-Starting collection install process
-Installing 'my_own_namespace.my_own_collection:1.0.0' to '/home/nikita/.ansible/collections/ansible_collections/my_own_namespace/my_own_collection'
-my_own_namespace.my_own_collection:1.0.0 was installed successfully
-```
 
 16. Запустите playbook, убедитесь, что он работает.
 
+<img width="1154" height="655" alt="image" src="https://github.com/user-attachments/assets/8887b144-5842-499d-bb68-59f8431ca32c" />  
 
-СКРИН  
-```shell
-nikita@DESKTOP-G2TVP0M:~/example_collection$ ansible-playbook single_task_playbook.yml
-[WARNING]: You are running the development version of Ansible. You should only run Ansible from "devel" if you are modifying the Ansible engine, or trying out features under development. This is a rapidly
-changing source of code and can become unstable at any point.
-[WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
-
-PLAY [test my_own_module] ***************************************************************************************************************************************************************************************
-
-TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [run module] ***********************************************************************************************************************************************************************************************
-ok: [localhost]
-
-TASK [dump test output] *****************************************************************************************************************************************************************************************
-ok: [localhost] => {
-    "msg": {
-        "changed": false,
-        "failed": false
-    }
-}
-
-PLAY RECAP ******************************************************************************************************************************************************************************************************
-localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-
-```
 
 17. В ответ необходимо прислать ссылку на репозиторий с collection
 
 Ответ:
-- ССЫЛКА my_own_collection/releases/tag/1.0.0
+- https://github.com/NIK0801/my_own_collection/releases/tag/v1.0.0
 
