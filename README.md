@@ -14,7 +14,8 @@
 4. Создайте виртуальное окружение: `python3 -m venv venv`
 5. Активируйте виртуальное окружение: `. venv/bin/activate`. Дальнейшие действия производятся только в виртуальном окружении
 
-скрин
+<img width="309" height="41" alt="image" src="https://github.com/user-attachments/assets/10b90f78-e3da-4d09-813a-1dfbc698650b" />
+
 
 6. Установите зависимости `pip install -r requirements.txt`
 7. Запустить настройку окружения `. hacking/env-setup`
